@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://firebasestorage.googleapis.com/v0/b/client-management-111c5.appspot.com/o/angular.png?alt=media&token=e5d1b1a0-96c4-4828-8e80-cb594a554da1">
+</p>
+
 # Reiterating through the basics of Angluar
 #### Goals 
 
