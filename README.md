@@ -11,7 +11,42 @@
 - Develop muscle memory to master Angular on the front end 
 - Learn enough to finish full-stack Angular projects 
 
-#### Step 1: Package Manager
+#### Notes on typescript 
+
+Strictly types notice the type of groceries member of class must be declared 
+
+``` javascript 
+class ShoppingList{
+  // Define the type ... line 3
+  groceries: String[];
+  constructor(){
+    this.groceries = []
+  }
+  addItem(item:string){
+    this.groceries.push(...this.groceries, item)
+  }
+  removeItem(item: string){
+    this.groceries = this.groceries.filter((grocery) =>  grocery !== item)
+  }
+}
+
+const basket = new ShoppingList();
+
+console.log('adding two items');
+
+basket.addItem("Apple");
+basket.addItem("Pizza");
+
+console.log(basket.groceries);
+
+basket.removeItem('Apple');
+console.log('removed item ');
+
+console.log(basket.groceries)
+
+```
+
+#### Package Manager
 
 To install the project dependencies, you will need to either use `npm` or `yarn`. To install `yarn`, run the following in your terminal:
 
