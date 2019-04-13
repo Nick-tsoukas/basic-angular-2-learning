@@ -1,0 +1,18 @@
+<h1>
+    {{ title }}
+</h1>
+<div *ngIf="showImage == true">
+ <img style="width:500px; margin-bottom:2em;" [src]="imageUrl" alt="">
+</div>
+<button [innerHTML]="imageToggleMessage" (click)="imageToggle()"></button>
+
+<div *ngFor=" let number of numbers">
+    {{ number + 100 }}
+</div>
+
+<!-- <div *ngFor ="let user of users; let i = index">
+   <p> <span class="status" [ngClass]="{'isAdmin': user.isAdmin}"></span> user id >> {{ i}} {{user.name}}</p>
+   <p> {{ user.title }}</p>
+   <p> Admin >>>> {{ user.isAdmin }} </p>
+</div> -->
+<app-child [users]='users'></app-child>
