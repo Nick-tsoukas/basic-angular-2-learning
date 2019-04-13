@@ -3,9 +3,12 @@
 </h1>
 
 <div *ngFor ="let user of users; let i = index">
-        <p> <span class="status" [ngClass]="{'isAdmin': user.isAdmin}"></span> user id >> {{ i}} {{user.name}}</p>
-        <p> {{ user.title }}</p>
-        <p> Admin >>>> {{ user.isAdmin }} </p>
+        <p> <span class="status" [ngClass]="{'isAdmin': user.isAdmin}"></span> user id >> {{ i}} {{user.name | uppercase}}</p>
+        <p> {{ user.title | uppercase }}</p>
+        <p> Admin >>>> {{ user.isAdmin | uppercase }} </p>
+        <div>
+            {{user | json  | uppercase}}
+        </div>
      </div>
 
      
