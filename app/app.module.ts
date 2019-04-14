@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MultiplyPipe } from './mult.pipe';
 
+import { AdminDashboardModule } from './admin-dashboard/admin-dashboard.module';
+
 
 import { AppComponent } from './app.component';
 import { ChildComponent } from './child.component';
@@ -17,7 +19,8 @@ import { ChildComponent } from './child.component';
   imports: [
     BrowserModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    AdminDashboardModule
   ],
   bootstrap: [
     AppComponent

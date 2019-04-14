@@ -4,7 +4,6 @@ export interface User {
   name : string;
   title: string;
   isAdmin : boolean;
-  
 }
 
 @Component({
@@ -29,7 +28,7 @@ export class AppComponent {
     {
       name : 'Peter',
       title: 'Developer',
-      isAdmin: false
+      isAdmin: false,
     },
     {
       name : 'John',
